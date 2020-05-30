@@ -29,7 +29,7 @@
     "webpack-cli": "^3.3.11"
   },
   "activationEvents": [
-    "*"
+    "onLanguage:gitcommit"
   ],
   "contributes": {
     "configuration": {
@@ -40,17 +40,16 @@
           "type": "boolean",
           "default": true,
           "description": "Enable coc-conventional extension"
+        },
+        "coc-conventional.enableLernaScopes": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable Lerna scopes completion"
         }
       }
-    },
-    "commands": [
-      {
-        "command": "coc-conventional.Command",
-        "title": "coc-conventional command title"
-      }
-    ]
+    }
   },
   "dependencies": {
-    "@commitlint/config-lerna-scopes": "^8.3.4"
+    "resolve-from": "^5.0.0"
   }
 }
