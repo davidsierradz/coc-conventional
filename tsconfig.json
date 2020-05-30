@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "lib": ["es2017", "es2018"],
+    "module": "commonjs",
+    "declaration": false,
+    "sourceMap": true,
+    "outDir": "lib",
+    "strict": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*", "lib", "**/lib/*"],
+  "typeAcquisition": {
+    "enable": true
+  },
+  "typingOptions": {
+    "enableAutoDiscovery": true
+  }
+}

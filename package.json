@@ -1,0 +1,56 @@
+{
+  "name": "coc-conventional",
+  "version": "0.0.0-development",
+  "description": "",
+  "author": "davidsierradz <davidsierradz@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "coc.nvim"
+  ],
+  "engines": {
+    "coc": "^0.0.70"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "prepare": "npm-run-all clean build"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.1",
+    "coc.nvim": "^0.0.77",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^7.0.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "coc-conventional configuration",
+      "properties": {
+        "coc-conventional.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable coc-conventional extension"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "coc-conventional.Command",
+        "title": "coc-conventional command title"
+      }
+    ]
+  },
+  "dependencies": {
+    "@commitlint/config-lerna-scopes": "^8.3.4"
+  }
+}
