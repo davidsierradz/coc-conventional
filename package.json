@@ -1,7 +1,7 @@
 {
   "name": "coc-conventional",
-  "version": "0.0.0-development",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Conventional commits extension for coc.nvim.",
   "author": "davidsierradz <davidsierradz@gmail.com>",
   "license": "MIT",
   "main": "lib/index.js",

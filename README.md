@@ -1,16 +1,35 @@
 # coc-conventional
 
+[![npm version](https://badge.fury.io/js/coc-conventional.svg)](https://badge.fury.io/js/coc-conventional)
+
+Completes types (with `@commitlint/config-conventional`) and scopes (with `lerna`).
+
 ## Install
 
 `:CocInstall coc-conventional`
 
-## Keymaps
+## Usage
 
-`nmap <silent> <C-l> <Plug>(coc-coc-conventional-keymap)`
+This extension will start when you edit a commit (`:set filetype gitcommit`) and follows the [Conventional Commits](https://www.conventionalcommits.org/) specification.
 
-## Lists
+[![asciicast](https://asciinema.org/a/mkyOnWbbQjJLIoLP1IrzXzpUE.svg)](https://asciinema.org/a/mkyOnWbbQjJLIoLP1IrzXzpUE)
 
-`:CocList demo_list`
+## Settings
+
+```json
+{
+  "coc-conventional.enabled": {
+    "type": "boolean",
+    "default": true,
+    "description": "Enable coc-conventional extension"
+  },
+  "coc-conventional.enableLernaScopes": {
+    "type": "boolean",
+    "default": false,
+    "description": "Enable Lerna scopes completion"
+  }
+}
+```
 
 ## License
 
